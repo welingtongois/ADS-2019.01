@@ -98,4 +98,26 @@ Para tirar o nome de dentro do elemento, selecione ele e aperte 'F2', assim voc�
 Da mesma forma que foi inserido os elementos, arraste o elemento 'botão' para dentro da interface.
 Ajuste-o como queira e selecionado ele, aperte 'F2' para escrever 'Entrar'
 
-![Botton](img/08.png)
+![Botton](img/09.png)
+
+####  INSERINDO AS IMG E DANDO NOME AOS BOIS
+
+Selecione a imagem e na aba 'Propriedades' escolha a ICON e a opção com '...' conforme as imagens abaixo.
+
+![Imginserindo](img/10.png)
+
+![Insere](img/11.png)
+
+Portanto a interface ficará desta forma:
+
+![Insere](img/12.png)
+
+Note na aba 'Navegador' que modifiquei os nomes(elas serão usadas como variáveis para o codigo), clicando em cima de cada elemento, e apertando 'F2' é possível renomea-la.
+
+E está finalziada a primeira parte
+
+- [x] INSERIR CONTAINER COM O NOME DA BORDA
+- [x] INSERIR ÍCONES E 'USUÁRIO' E 'SENHA'
+- [x] INSERIR INPUTS PARA CADA UM
+- [x] INSERIR BOTÃO 'ENTRAR'
+- [x] DAR NOME AOS BOIS
