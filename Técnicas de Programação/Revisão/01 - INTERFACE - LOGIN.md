@@ -56,6 +56,29 @@ Escolha na aba 'Paleta', a opção abaixo e arraste até sua interface.
 ![Painel](img/03.png)
 
 Você irá perceber que há um quadrado que é seu container (Painel), que nada mais é que um espaço delimitado que poderá ser modificado.
-Vá na aba á direita 'Propriedades' e escolha os ... da opção 'Border' conforme abaixo:
+Vá na aba á direita 'Propriedades' e escolha os '...'(sim, clique nos 3 pontinhos) da opção 'Border' conforme abaixo:
 
 ![Border](img/04.png)
+
+Note que eu selecionei a opção 'Borda com Título' e já foi habilitado em 'Propriedades' para escrever o título da aba.
+Preencha com 'Login'.
+
+Com isso, nosso primeiro item da lista foi concluído.
+
+####  INSERINDO USUÁRIO E SENHA
+
+Nesta parte, você não irá inserir um container, e sim controles do Swing.
+Conforme abaixo, busque pela opção 'Label', arrastando e jogando na interface dentro do container criado(faça isso 2 vezes - 1 para Login e outro para Senha).
+
+![Label](img/05.png)
+
+É importante se atentar que foram inserido 3 elementos na nossa interface , portanto no nosso navegador tem 3 elementos além do JFrame (2 Labels e 1 Jpanel).
+
+![Atual](img/06.png)
+
+Clique em cima do Label da interface e aperte 'F2' para Renomea-lo, fazendo isso para os dois Labels, irá ficar assim:
+
+![LabelModiicado](img/07.png)
+
+Note que foi alterado o tamanho da fonte e está em negrito.
+
