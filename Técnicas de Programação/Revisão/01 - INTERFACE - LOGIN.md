@@ -49,7 +49,7 @@ Ao criar o esta interface, vamos nos atentar a 4 coisas:
 4. NAVEGADOR
   - Janela que você poderá criar uma hierarquia dos elementos e verificá-los.
   
-#### INSERINDO CONTAINER COM O NOME DA BORDA
+####  INSERINDO CONTAINER COM O NOME DA BORDA
 
 Escolha na aba 'Paleta', a opção abaixo e arraste até sua interface.
 
