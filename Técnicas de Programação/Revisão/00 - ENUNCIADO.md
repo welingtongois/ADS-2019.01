@@ -9,7 +9,7 @@ Este tutorial tem como finalidade auxiliar a fazer o exercício abaixo, explican
 2. [AÇÕES INTERFACE - LOGIN](02%20-%20AÇÕES%20INTERFACE%20-%20LOGIN.md)
 3. [INTERFACE - CADASTRO](03%20-%20INTERFACE%20-CADASTRO.md)
 4. [AÇÕES INTERFACE - CADASTRO](04%20-%20AÇÕES%20DA%20INTERFACE%20-%20CADASTRO.md)
-4. [AÇÕES INTERFACE - CADASTRO](05%20-%20ATALHOS%20e%20DICAS.md)
+5. [ATALHOS E DICAS](05%20-%20ATALHOS%20e%20DICAS.md)
 ---
 ### Exercício de Revisão:
 
