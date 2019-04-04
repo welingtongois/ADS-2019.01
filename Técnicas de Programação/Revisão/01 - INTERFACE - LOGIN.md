@@ -80,5 +80,7 @@ Clique em cima do Label da interface e aperte 'F2' para Renomea-lo, fazendo isso
 
 ![LabelModiicado](img/07.png)
 
-Note que foi alterado o tamanho da fonte e está em negrito.
+Note:
+    - foi alterado o tamanho da fonte e está em negrito, isso pode ser feito na aba propriedades selecionando o elemento
+    - foi alterado o nome que aparece na interface, mas as variáveis tem o mesmo nome ('Label1' e 'Label2')
 
