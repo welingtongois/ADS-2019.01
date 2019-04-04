@@ -1,0 +1,90 @@
+
+
+/*
+--------------------------------------------------------------------------------
+--1Liste todos os empregados que têm um salário (salary) entre 1000 e 2000.
+--------------------------------------------------------------------------------
+*/
+select employee_id,first_name, salary 
+from employees 
+where SALARY >= 1000 and salary <= 2000;
+
+select employee_id,first_name, salary 
+from employees 
+WHERE SALARY BETWEEN  1000 AND  2000;
+
+/*
+--------------------------------------------------------------------------------
+2Liste os números e nomes dos departamentos ordenados por nome do
+departamento. (departaments)
+--------------------------------------------------------------------------------
+*/
+
+select DEPARTMENT_ID,DEPARTMENT_NAME 
+from departments 
+order by department_name;
+
+/*
+OBS: numero de departamento são os ID's de cada um
+--------------------------------------------------------------------------------
+3Liste todos os tipos diferentes de funções desempenhadas pelos empregados.
+--------------------------------------------------------------------------------
+*/
+
+select e.first_name,e.LAST_NAME,j.job_title 
+from employees e
+join jobs j on j.job_id = e.job_id
+order by e.first_name
+
+/*
+--------------------------------------------------------------------------------
+4Liste a informação detalhada dos empregados dos departamentos 10 e 20 por
+ordem alfabética do nome.
+--------------------------------------------------------------------------------
+*/
+
+select * 
+from employees 
+where department_id = 10 AND department_id =20 
+order by first_name
+
+select * 
+from employees 
+where department_id = 10 OR department_id =20 
+order by first_name
+
+/*
+--------------------------------------------------------------------------------
+5Liste os nomes e funções de todos os empregados de escritório (clerk) do
+departamento 50.
+--------------------------------------------------------------------------------
+*/
+select * 
+from employees 
+where JOB_ID like '%_CLERK%' and department_id = 50
+
+/*
+--------------------------------------------------------------------------------
+6Apresente todos os nomes de empregados que tenham th ou ll.
+--------------------------------------------------------------------------------
+--SENDO NOME
+*/
+select * from employees 
+where first_name like '%th%' or first_name like '%ll%'
+
+--SENDO SOBRENOME
+
+select * from employees 
+where LAST_NAME like  '%th%' or LAST_NAME like '%ll%'
+
+
+/*
+--------------------------------------------------------------------------------
+7Liste o nome, função e salário para todos os empregados que tenham um chefe
+(mgr).
+--------------------------------------------------------------------------------
+*/
+
+select * 
+from employees 
+WHERE manager_id IS NOT NUL
