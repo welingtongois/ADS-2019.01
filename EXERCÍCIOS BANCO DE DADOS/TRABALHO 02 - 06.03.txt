@@ -1,0 +1,170 @@
+ALTER TABLE tb_clienteconta
+DROP CONSTRAINT
+tb_cliente_tb_cliente_FK;
+
+ALTER TABLE tb_clienteconta
+DROP CONSTRAINT
+tb_conta_tb_conta_FK;
+
+ALTER TABLE tb_conta
+DROP CONSTRAINT
+tb_conta_tb_tipoconta_FK;
+
+ALTER TABLE tb_movimentacao
+DROP CONSTRAINT
+tb_movimentacao_tb_clienteconta_FK;
+
+
+drop table tb_cliente;
+drop table tb_movimentacao;
+drop table tb_clienteconta;
+drop table tb_conta;
+drop table tb_tipoconta;
+
+
+
+-----criando tabelas-----------------------
+-----tb_cliente
+create table tb_cliente
+
+(cd_cliente number(10),
+
+nm_cliente varchar2(2000 char),
+
+ie_cpf_cnpj varchar2(15 char),
+
+id_tipocliente char(1 char));
+
+-----tb_clienteconta
+create table tb_clienteconta
+(cd_cliente number(10),
+cd_conta number(10));
+
+
+-----tb_conta
+create table tb_conta
+(cd_conta number(10),
+nm_conta varchar2(250),
+cd_tipoconta number(10));
+
+
+-----tb_tipoconta
+create table tb_tipoconta
+(cd_tipoconta number(10),
+nm_tipoconta varchar2(250char),
+ie_ativo number(1));
+
+
+-----tb_movimentacao
+create table tb_movimentacao
+(cd_cliente number(10),
+cd_conta number(10),
+dt_movimentacao date,
+ds_movimentacao varchar2(300 char));
+
+
+-----criando PK, U, NOT NULL-----------------------
+
+-----tb_cliente
+alter table tb_cliente
+add constraint tb_cliente_cliente_PK primary key (cd_cliente);
+
+alter table tb_cliente
+add constraint tb_cliente_ie_cpf_cnpj_U UNIQUE (ie_cpf_cnpj);
+
+ALTER TABLE tb_cliente MODIFY cd_cliente number(10) NOT NULL;
+
+ALTER TABLE tb_cliente MODIFY nm_cliente varchar2(2000 char) NOT NULL;
+
+ALTER TABLE tb_cliente MODIFY id_tipocliente char(1 char) NOT NULL;
+
+-----tb_clienteconta
+
+alter table tb_clienteconta
+add constraint tb_cliente_conta_PK primary key (cd_conta,cd_cliente);
+
+
+ALTER TABLE tb_clienteconta MODIFY cd_cliente number(10) NOT NULL;
+
+ALTER TABLE tb_clienteconta MODIFY cd_conta number(10) NOT NULL;
+
+
+-----tb_conta
+alter table tb_conta
+add constraint tb_conta_conta_PK primary key (cd_conta);
+
+alter table tb_conta
+add constraint tb_conta_nm_conta UNIQUE (nm_conta);
+
+ALTER TABLE tb_conta MODIFY cd_conta number(10) NOT NULL;
+ALTER TABLE tb_conta MODIFY nm_conta varchar2(250) NOT NULL;
+ALTER TABLE tb_conta MODIFY cd_tipoconta number(10) NOT NULL;
+
+
+
+-----tb_movimentacao
+alter table tb_movimentacao
+add constraint tb_movimentacao_cliente_PK primary key (cd_cliente,cd_conta);
+
+ALTER TABLE tb_movimentacao MODIFY cd_cliente number(10) NOT NULL;
+
+ALTER TABLE tb_movimentacao MODIFY cd_conta number(10) NOT NULL;
+
+ALTER TABLE tb_movimentacao MODIFY dt_movimentacao date NOT NULL;
+
+ALTER TABLE tb_movimentacao MODIFY ds_movimentacao varchar2(300 char) NOT NULL;
+
+
+
+-----tb_tipoconta
+
+alter table tb_tipoconta
+add constraint tb_tipoconta_tpconta_PK primary key (cd_tipoconta);
+
+alter table tb_tipoconta
+add constraint tb_tipoconta_nm_conta UNIQUE (nm_tipoconta);
+
+ALTER TABLE tb_tipoconta MODIFY cd_tipoconta number(10) NOT NULL;
+
+ALTER TABLE tb_tipoconta MODIFY nm_tipoconta varchar2(250 char) NOT NULL;
+
+ALTER TABLE tb_tipoconta MODIFY ie_ativo number(1) NOT NULL;
+
+
+--ok
+-----criando FK-----------------------
+-----tb_clienteconta
+
+
+ALTER TABLE tb_clienteconta
+ADD CONSTRAINT tb_cliente_tb_cliente_FK
+FOREIGN KEY (cd_cliente) REFERENCES tb_cliente(cd_cliente);
+
+ALTER TABLE tb_clienteconta
+ADD CONSTRAINT tb_conta_tb_conta_FK
+FOREIGN KEY (cd_conta) REFERENCES tb_conta(cd_conta);
+
+-----tb_conta
+
+ALTER TABLE tb_conta
+ADD CONSTRAINT tb_conta_tb_tipoconta_FK
+FOREIGN KEY (cd_tipoconta) REFERENCES tb_tipoconta(cd_tipoconta); 
+
+-----tb_movimentacao
+
+ALTER TABLE tb_movimentacao
+ADD CONSTRAINT tb_movimentacao_tb_clienteconta_FK
+FOREIGN KEY (cd_cliente,cd_conta) REFERENCES tb_clienteconta(cd_cliente,cd_conta);
+
+-----criando regras especiais-------------------
+
+
+ALTER TABLE tb_cliente
+ADD CONSTRAINT cliente_tipocliente_CK
+  CHECK(id_tipocliente in('J','F'));
+
+
+ALTER TABLE tb_tipoconta
+ADD CONSTRAINT tipoconta_CK
+
+  CHECK(ie_ativo in(0,1));
