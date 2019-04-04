@@ -1,6 +1,9 @@
 # REVISÃO PROVA 01 - 'Técnicas de Programação' 
 
-**Um auxílio para os desesperados**
+**Um auxílio para os desesperados **
+**- 'O difícil é o fácil que não sabemos' - Aztronic**
+
+Este tutorial tem como finalidade auxiliar a fazer o exercício abaixo, explicando alguns pontos específicos para a resolução do exercício abaixo.
 
 ### EXERCÍCIO DE REVISÃO:
 
