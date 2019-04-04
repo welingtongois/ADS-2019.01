@@ -24,7 +24,7 @@ Toda vez que for necessário inserir uma ação a algum elemento, clique duas ve
 Perceba que você será redirecionado a aba 'CÓDIGO' E assim estará na linha do 'evento' conforme clicado, algo assim:
 
 
-```
+```java
 private void btn_EntrarActionPerformed(java.awt.event.ActionEvent evt) {                                           
         // TODO add your handling code here:      
     }  
@@ -32,10 +32,43 @@ private void btn_EntrarActionPerformed(java.awt.event.ActionEvent evt) {
 
 Então nosso código java precisa da seguinte sentença:
 
-1. Pegue o que está no input Login
-2. E
-3. Pegue o que está no input Senha
-4. Compare e veja se é igual a 'admin'
-5. Caso sim, esconda a janela
-6. Caso não, mostre uma tela.
+   1. Pegue o que está no input Login 
+   2. E
+   3. Pegue o que está no input Senha
+   4. Compare e veja se é igual a 'admin'
+   5. Caso sim, esconda a janela
+   6. Caso não, mostre uma tela.
+   
+ As funções a serem utilizadas:
+   
+   1. getText() - >> pega o input de um JTextField
+   2. if &&     - >> verifica se duas sentenças são verdadeiras
+   3. equalsIgnoreCase     - >> verifica se duas Strings são iguais (não leva em consideração Case Sensitive
+   4. dispose();   ->> fecha a janela atual
+   5. JOptionPane.showMessageDialog(null, "Usuário ou senha Inválido!");   ---> chama o objeto JOptionPane, mostrando uma mensagem com o parametro null e a frase desejada.
+   
+Juntando todas as funções, o código que atribuirá um evento ao botão, ficará assim:
+   
+   ``` java
+       private void btn_EntrarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        String login = input_Login.getText();
+        String senha = input_Senha.getText();
+        
+        if(login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")){
+            dispose();
+        }else{
+            JOptionPane.showMessageDialog(null, "Usuário ou senha Inválido!");
+                    
+        }
+        
+    } 
+    
+    ```
+Aperte 'SHIFT+F6' para rodar o programa e assim verificamos:
+
+- [x] APERTANDO O BOTÃO,VERIFICAR SE O INPUT DO LOGIN E DA SENHA FOI INSERIDO 'ADMIN'
+- [x] CASO NÃO, APARECER UMA CAIXA DE DIÁLOGO
+- [x] CASO SIM, ESCONDER A TELA ATUAL
+- [x] AO ESCONDER A TELA ATUAL, MOSTRAR A 'TELA DE CADASTRO' (SERÁ FEITO DEPOIS)
 
