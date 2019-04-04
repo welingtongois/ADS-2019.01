@@ -10,7 +10,7 @@ Este tutorial tem como finalidade auxiliar a fazer o exercício abaixo, explican
 3. [INTERFACE - CADASTRO](03%20-%20INTERFACE%20-CADASTRO.md)
 4. [AÇÕES INTERFACE - CADASTRO](04%20-%20AÇÕES%20DA%20INTERFACE%20-%20CADASTRO.md)
 ---
-### EXERCÍCIO DE REVISÃO:
+### Exercício de Revisão:
 
 
 ![Exercicio01](img/Exercicio%2001.png?raw=true)
