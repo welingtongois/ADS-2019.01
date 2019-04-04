@@ -7,7 +7,7 @@ Este tutorial tem como finalidade auxiliar a fazer o exercício abaixo, explican
 ## DIVIDIDO EM:
 1. [INTERFACE - LOGIN](01%20-%20INTERFACE%20-%20LOGIN.md)
 2. [AÇÕES INTERFACE - LOGIN](02%20-%20AÇÕES%20INTERFACE%20-%20LOGIN.md)
-1. [INTERFACE - LOGIN](01%20-%20INTERFACE%20-%20LOGIN.md)
+1. [INTERFACE - CADASTRO](03%20-%20INTERFACE%20-CADASTRO.md)
 ---
 ### EXERCÍCIO DE REVISÃO:
 
