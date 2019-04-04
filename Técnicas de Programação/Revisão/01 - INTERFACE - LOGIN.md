@@ -81,6 +81,21 @@ Clique em cima do Label da interface e aperte 'F2' para Renomea-lo, fazendo isso
 ![LabelModiicado](img/07.png)
 
 Note:
-    - foi alterado o tamanho da fonte e está em negrito, isso pode ser feito na aba propriedades selecionando o elemento
-    - foi alterado o nome que aparece na interface, mas as variáveis tem o mesmo nome ('Label1' e 'Label2')
+      - foi alterado o tamanho da fonte e está em negrito, isso pode ser feito na aba propriedades selecionando o elemento
+      - foi alterado o nome que aparece na interface, mas as variáveis tem o mesmo nome ('Label1' e 'Label2')
+      
+####  INSERINDO AS CAIXAS DE INPUT
 
+Para inserir os inputs, arraste o elemento 'campo de texto' para a área de exibição conforme abaixo
+
+![InputText](img/08.png)
+
+Para tirar o nome de dentro do elemento, selecione ele e aperte 'F2', assim você poderá apaga-lo.
+
+
+####  INSERINDO O BOTÃO ENTRAR
+
+Da mesma forma que foi inserido os elementos, arraste o elemento 'botão' para dentro da interface.
+Ajuste-o como queira e selecionado ele, aperte 'F2' para escrever 'Entrar'
+
+![Botton](img/08.png)
