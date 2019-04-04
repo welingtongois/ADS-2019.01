@@ -1,4 +1,4 @@
-# ADS
+# ADS - 1º Semestre de 2019
 
 1. Processamento e Estruturas de Dados
 2. Técnicas de Programação
