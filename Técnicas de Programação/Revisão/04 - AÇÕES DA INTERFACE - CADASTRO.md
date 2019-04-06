@@ -72,3 +72,5 @@ Indo para o código do botão, você irá ter:
     } 
 
 ```
+
+O mesmo passo-a-passo pode ser feito para o botão no menu suspento 'Sobre'
