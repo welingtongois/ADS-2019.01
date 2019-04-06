@@ -51,4 +51,45 @@ Para que seja possível inserir os atalhos, é só dar dois cliques onde está e
 Abaixo é mostrado como irá ficar a hierarquia:
 Repare que independente dos nomes das variáveis (aba de navegação) o nome que aparece na interface é diferente
 
-![menuSuspenso2](img/18.img)
+![menuSuspenso2](img/18.png)
+
+Para finalizar a interface em partes, utilize os elementos conforme a figura:
+
+![interfaceFinal](img/19.png)
+
+Vamos reparar em 2 coisas:
+  1. Se você rodar é possível selecionar Masculino e Feminino ao mesmo tempo
+  2. Não há elementos na caixa de seleção(combo box)
+
+![elementosSwing](img/20.png)
+
+Para que seja possível é só arrastar o elemento 'Grupo de Botões' e então selecionar os botões rádios para o mesmo grupo:
+(repare que a aba navegação está com o grupo de botões)
+
+![botaoRadio](img/21.png)
+
+Para verificar se está tudo ok, é só rodar novamente e ver se eles se alternam na seleção.
+
+Para conseguir inserir as opções do combo box é só selecionar conforme a imagem abaixo e escrever com quebras de linha as opções:
+![comboBox](img/22.png)
+
+Para inserir a barra de ferramentas, basta arrastar a opção conforme a figura e inserir os labels.
+Como já foi mostrado, é só inserir os ICONS conforme as figuras
+
+![barra](img/23.png)
+
+Assim, a interface está basicamente finalizada:
+
+![barra](img/24.png)
+
+Não se esqueça de dar nome aos bois de forma simples.
+
+
+- [X] MENU SUSPENSO COM 2 OPÇÕES - 'ARQUIVO' E 'EDITAR'
+- [x] BARRA DE MENU COM ICONES - ABOUT - SAVE - CLEAR - EXIT
+- [x] LABELS: NOME - SEXO - FUNÇÃO - PERÍODO - VALOR HORA
+- [x] INPUTS: NOME - VALOR HORA
+- [x] INPUTS RADIO: MASC - FEMIN
+- [x] CHECK BOX: MANHÃ - TARDE - NOITE
+- [x] BOTÕES: LIMPAR TUDO - SALVAR
+- [x] COMBO BOX
