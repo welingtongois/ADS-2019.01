@@ -38,8 +38,8 @@ Vá para o código da tela login que está atualmente assim:
 
 ```
     
-    É necessário fazer com que se login e senha sejam 'admin',você chame a janela cadastro.
-    Isso é possível com a inserção da linha que deixa visível a tela cadastro.
+   É necessário fazer com que se login e senha sejam 'admin',você chame a janela cadastro.
+    Isso é possível com a inserção da linha que deixa visível a tela cadastro. 
     
     
 ```
@@ -57,4 +57,18 @@ Vá para o código da tela login que está atualmente assim:
         }
         
     }      
+```
+       
+   Para que seja possível utilizar os labels como botões, clique com o botão direito conforme a figura abaixo:
+   
+![EventoClick](img\25.png)
+
+Indo para o código do botão, você irá ter:
+
+```
+    private void aboutMouseClicked(java.awt.event.MouseEvent evt) {                                   
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Desenvolvido por Takepera!");
+    } 
+
 ```
