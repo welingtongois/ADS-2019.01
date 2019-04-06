@@ -38,3 +38,17 @@ Acima há a opção 'barra de menu' arrastando e jogando você irá visualizar u
 Porém ainda não foi adicionado os itens conforme a figura do enunciado. Para isso é necessário arrastar a opção 'item de menu', e ajustar na aba 'navegador' pois a hierarquia irá mostrar onde estão estes itens conforme a figura abaixo:
 
 ![menu02](img/16.png)
+
+Portanto parte da interface ficará desta forma abaixo:
+Para que seja possível alterar o nome, é só clicar em cima do item e apertar 'F2'.
+É importante se atentar a hierarquia dos elementos(barra navegação,posteriormente mostrada)
+O elemento 'separador' mostra esta pequena linha separando os nomes.
+
+![menuSuspenso](img/17.png)
+
+Para que seja possível inserir os atalhos, é só dar dois cliques onde está escrito 'atalho' e atribuir com o teclado.
+
+Abaixo é mostrado como irá ficar a hierarquia:
+Repare que independente dos nomes das variáveis (aba de navegação) o nome que aparece na interface é diferente
+
+![menuSuspenso2](img/18.img)
