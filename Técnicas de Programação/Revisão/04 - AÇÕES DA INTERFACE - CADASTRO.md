@@ -11,3 +11,50 @@ Este tutorial tem como finalidade auxiliar a fazer o exercício abaixo, explican
 4. **AÇÕES INTERFACE - CADASTRO**
 5. [ATALHOS E DICAS](05%20-%20ATALHOS%20e%20DICAS.md)
 ---
+**CHECK LIST 1 - INTERFACE(O QUE ESTAMOS VENDO) DE LOGIN**
+- [ ] INTERLIGAR A TELA LOGIN COM A TELA DO CADASTRO
+- [ ] BOTÃO SALVAR E MENU SUSPENSO SALVAR APARECEREM UMA CAIXA DE DIÁLOGO
+- [ ] BOTÃO CLEAN, BOTÃO LIMPAR TUDO E MENU SUSPENSO LIMPAR DEIXAR NO PADRÃO DEFAULT
+- [ ] ABOUT E SOBRE MOSTRAR UMA CAIXA DE DIÁLOGO
+- [ ] BOTÃO SAIR E MENU SUSPENSO SAIR, SAIR DA TELA
+
+
+Vá para o código da tela login que está atualmente assim:
+
+   ``` java
+       private void btn_EntrarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        String login = input_Login.getText();
+        String senha = input_Senha.getText();
+        
+        if(login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")){
+            dispose();
+        }else{
+            JOptionPane.showMessageDialog(null, "Usuário ou senha Inválido!");
+                    
+        }
+        
+    } 
+    
+
+    ```
+    
+    É necessário fazer com que se login e senha sejam 'admin',você chame a janela cadastro.
+    Isso é possível com a inserção da linha que deixa visível a tela cadastro.
+    
+    ```java
+    private void btn_EntrarActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        String login = input_Login.getText();
+        String senha = input_Senha.getText();
+        
+        if(login.equalsIgnoreCase("admin") && senha.equalsIgnoreCase("admin")){
+            dispose();
+            new Cadastro().setVisible(true);
+        }else{
+            JOptionPane.showMessageDialog(null, "Usuário ou senha Inválido!");
+                    
+        }
+        
+    }      
+    ```
