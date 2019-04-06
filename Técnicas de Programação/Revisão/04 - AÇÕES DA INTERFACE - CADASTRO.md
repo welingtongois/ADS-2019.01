@@ -61,7 +61,7 @@ Vá para o código da tela login que está atualmente assim:
        
    Para que seja possível utilizar os labels como botões, clique com o botão direito conforme a figura abaixo:
    
-![EventoClick](img\25.png)
+![EventoClick](img/25.png)
 
 Indo para o código do botão, você irá ter:
 
