@@ -26,15 +26,15 @@ Este tutorial tem como finalidade auxiliar a fazer o exercício abaixo, explican
 Primeiro, deve se criar um novo JFrame
 Inicialmente na paleta a direita, na opção Title, coloque o nome 'Cadastro'
 
-! [Title] (img\14.png)
+! [Title] (img/14.png)
 
 
 
 Com tudo que foi visto até agora, é fácil montar a interface, porém há algumas funcionalidades que faltam:
 
-![menu](img\15.png)
+![menu](img/15.png)
 
 Acima há a opção 'barra de menu' arrastando e jogando você irá visualizar uma modificação na interface.
 Porém ainda não foi adicionado os itens conforme a figura do enunciado. Para isso é necessário arrastar a opção 'item de menu', e ajustar na aba 'navegador' pois a hierarquia irá mostrar onde estão estes itens conforme a figura abaixo:
 
-![menu02](img\16.png)
+![menu02](img/16.png)
