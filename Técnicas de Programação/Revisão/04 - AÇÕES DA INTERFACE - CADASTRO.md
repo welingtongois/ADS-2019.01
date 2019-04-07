@@ -11,7 +11,7 @@ Este tutorial tem como finalidade auxiliar a fazer o exercício abaixo, explican
 4. **AÇÕES INTERFACE - CADASTRO**
 5. [ATALHOS E DICAS](05%20-%20ATALHOS%20e%20DICAS.md)
 ---
-**CHECK LIST 1 - INTERFACE(O QUE ESTAMOS VENDO) DE LOGIN**
+**CHECK LIST 4 - AÇÕES DA TELA DE CADASTRO**
 - [ ] INTERLIGAR A TELA LOGIN COM A TELA DO CADASTRO
 - [ ] BOTÃO SALVAR E MENU SUSPENSO SALVAR APARECEREM UMA CAIXA DE DIÁLOGO
 - [ ] BOTÃO CLEAN, BOTÃO LIMPAR TUDO E MENU SUSPENSO LIMPAR DEIXAR NO PADRÃO DEFAULT
@@ -126,3 +126,85 @@ Atribua também no menu suspenso e seu código abaixo ficará desta forma:
         dispose();
     }   
 ```
+### Inserindo a função no Clean
+
+Então ao clicar no botão 'Limpar tudo' você deve:
+       1. Alterar o campo Nome e Valor Hora para ""
+       2. Alterar o combo box para "Não especificado"
+       3. Alterar a seleção do botão rádio para Masc
+       4. Desabilitar todos os checkbox
+
+Para cada opção ficará desta forma :
+   1. Alterar o campo Nome e Valor Hora para ""
+       Setar o campo com ""
+   
+       ```java
+        input_nome.setText("");
+        input_valor.setText("");    
+       ```
+       
+   2. Alterar o combo box para "Não especificado"
+       Deixar selecionado o campo "Não especificado"
+       ```java
+       ComboBox.setSelectedItem("Não Especificado");
+       ```
+   3. Alterar a seleção do botão rádio para Masc
+      A seleção radioMasc é true(selecionado)
+    
+       ```java
+       radioMasc.setSelected(true);
+       ``` 
+   4. Desabilitar todos os checkbox
+     A seleção dos 3 checkbox devem ser falsas
+      ```java
+        tarde.setSelected(false);
+        manha.setSelected(false);
+        noite.setSelected(false);
+       ``` 
+   Portanto o código final deve estar assim:
+   
+```
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        input_nome.setText("");
+        input_valor.setText("");
+        ComboBox.setSelectedItem("Não Especificado");
+        radioMasc.setSelected(true);
+        tarde.setSelected(false);
+        manha.setSelected(false);
+        noite.setSelected(false);
+    }                                        
+
+    private void ComboBoxActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+    }                                        
+
+    private void LimparActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+        input_nome.setText("");
+        input_valor.setText("");
+        ComboBox.setSelectedItem("Não Especificado");
+        radioMasc.setSelected(true);
+        tarde.setSelected(false);
+        manha.setSelected(false);
+        noite.setSelected(false);
+    }                                      
+
+    private void cleanMouseClicked(java.awt.event.MouseEvent evt) {                                   
+        input_nome.setText("");
+        input_valor.setText("");
+        ComboBox.setSelectedItem("Não Especificado");
+        radioMasc.setSelected(true);
+        tarde.setSelected(false);
+        manha.setSelected(false);
+        noite.setSelected(false);
+        // TODO add your handling code here:
+    }   
+```
+
+
+- [X] INTERLIGAR A TELA LOGIN COM A TELA DO CADASTRO
+- [X] BOTÃO SALVAR E MENU SUSPENSO SALVAR APARECEREM UMA CAIXA DE DIÁLOGO
+- [X] BOTÃO CLEAN, BOTÃO LIMPAR TUDO E MENU SUSPENSO LIMPAR DEIXAR NO PADRÃO DEFAULT
+- [X] ABOUT E SOBRE MOSTRAR UMA CAIXA DE DIÁLOGO
+- [X] BOTÃO SAIR E MENU SUSPENSO SAIR, SAIR DA TELA
