@@ -18,6 +18,7 @@ Este tutorial tem como finalidade auxiliar a fazer o exercício abaixo, explican
 - [ ] ABOUT E SOBRE MOSTRAR UMA CAIXA DE DIÁLOGO
 - [ ] BOTÃO SAIR E MENU SUSPENSO SAIR, SAIR DA TELA
 
+### Inserindo a função de aparecer através da tela de 'login'
 
 Vá para o código da tela login que está atualmente assim:
 
@@ -58,6 +59,8 @@ Vá para o código da tela login que está atualmente assim:
         
     }      
 ```
+
+### Inserindo a função no about
        
    Para que seja possível utilizar os labels como botões, clique com o botão direito conforme a figura abaixo:
    
@@ -73,4 +76,53 @@ Indo para o código do botão, você irá ter:
 
 ```
 
-O mesmo passo-a-passo pode ser feito para o botão no menu suspento 'Sobre'
+O mesmo passo-a-passo pode ser feito para o botão no menu suspenso 'Sobre'
+
+### Inserindo a função no save
+
+Abaixo você irá selecionar:
+       O label com ícone de save, atribuir uma ação(botão direito, conforme imagem anteriro) com o mouse (evento click) e utilizar o código abaixo. 
+``` 
+       JOptionPane.showMessageDialog(null, "Salvo com sucesso!");
+```   
+Como vimos acima, este código irá abrir uma nova caixa de diálogo e fingir que foi salvo.
+Atribua essa função ao botão do menu suspenso e o botão Salvar na interface.
+
+```
+    private void saveMouseClicked(java.awt.event.MouseEvent evt) {                                  
+        // Utilize este código:
+        JOptionPane.showMessageDialog(null, "Salvo com sucesso!");
+    }                                 
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Salvo com sucesso!");
+    }   
+    
+        private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, "Salvo com sucesso!");
+    }  
+    
+```
+
+### Inserindo a função no exit
+
+De forma análoga ao save e about, você irá atribuir um evento ao label Sair:
+
+```
+       dispose();
+```
+Atribua também no menu suspenso e seu código abaixo ficará desta forma:
+
+```
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        // TODO add your handling code here:
+        dispose();
+    }                                          
+
+    private void exitMouseClicked(java.awt.event.MouseEvent evt) {                                  
+        // TODO add your handling code here:
+        dispose();
+    }   
+```
